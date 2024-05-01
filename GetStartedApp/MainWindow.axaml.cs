@@ -1,11 +1,12 @@
 using Avalonia.Controls;
 
-namespace GetStartedApp;
-
-public partial class MainWindow : Window
+namespace GetStartedApp
 {
-    public MainWindow()
+    public partial class MainWindow : Window
     {
-        InitializeComponent();
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
     }
 }
