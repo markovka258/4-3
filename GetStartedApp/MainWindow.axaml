@@ -29,46 +29,47 @@
         </Style>
     </Window.Styles>
 
-
-    <Grid ShowGridLines="True"
-        RowDefinitions="auto,*,auto"
+ <Grid ShowGridLines="True"
+        RowDefinitions="auto,*"
         ColumnDefinitions="*,*"
         Background="#FFFFFFFF">
+    <DockPanel Height = "40"
+              HorizontalAlignment = "Stretch"
+              Grid.Row = "0"
+              Grid.ColumnSpan = "2">
+          <TextBlock Margin = "0 10">Home</TextBlock>
+          <TextBlock Margin = "11 10">About</TextBlock>
+          <TextBlock Margin = "11 10">Blog's Main Topic 1</TextBlock>
+          <TextBlock Margin = "11 10">Blog's Main Topic 3</TextBlock>
+          <TextBlock Margin = "11 10">Associated Blogs</TextBlock>
+          <TextBlock Margin = "0 10 5 0" TextAlignment = "Right">RSS</TextBlock>
+   </DockPanel>
+
   
-
-<DockPanel Grid.Row="0"
-               Grid.ColumnSpan="2">
-      <TextBlock>Home</TextBlock>
-      <TextBlock>About</TextBlock>
-      <TextBlock>About</TextBlock>
-      <TextBlock>Blog's Main Topic 1</TextBlock>
-      <TextBlock>Blog's Main Topic 2</TextBlock>
-      <TextBlock>Blog's Main Topic 3</TextBlock>
-      <TextBlock>Associated blogs</TextBlock>
-      <TextBlock DockPanel.Dock="Right" TextAlignment="Right">RSS</TextBlock>
-    </DockPanel>
-
-    <StackPanel Grid.Row="1"
+    <StackPanel Width="550" 
+                Grid.Row="1"
                 Orientation="Vertical"
                 Background="#FFFFFFFF">
-      <TextBlock>Product 1</TextBlock>
-      <TextBlock>Product 2</TextBlock>
-      <TextBlock>Product 3</TextBlock>
-      <TextBlock>Product 4</TextBlock>
-      <TextBlock>Product 5</TextBlock>
+      <TextBlock DockPanel.Dock="Left">Article 1</TextBlock>
+      <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis massa sed rhoncus maximus. Nunc efficitur justo et arcu finibus pellentesque. Nulla eu maximus nunc, quis consectetur enim. Nunc at pretium ligula, sit amet commodo est. Donec imperdiet hendrerit enim vitae egestas. Duis porttitor sem id urna feugiat ornare. Nullam quis mi ultrices, vestibulum odio sed, convallis magna. Aenean ornare est ligula, in pulvinar turpis aliquet vitae. Phasellus ornare, urna non gravida ornare, magna ante interdum sem, at fringilla eros elit vitae turpis. Aliquam bibendum consequat dui, non convallis turpis vulputate quis. Fusce vulputate semper arcu ut blandit. Sed id turpis id nibh porta tincidunt. Ut mi erat, fringilla rhoncus dictum quis, pellentesque nec libero. Fusce tincidunt est in dolor efficitur, sit amet sollicitudin nibh faucibus. Etiam id mi dolor. Nulla posuere, lorem nec imperdiet tincidunt, neque arcu ultricies orci, et egestas leo tortor et diam.</TextBlock>
+    
+      <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia"
+                        Height="100"
+                        Width="100"
+                        Stretch="Uniform"
+                        HorizontalAlignment="Center"></Image>
 
-        <DockPanel Grid.Row="2"
-                    Grid.ColumnSpan="2"
-                    Background="#FFFFFFFF">
-            <TextBlock DockPanel.Dock="Left">Tags:</TextBlock>
-            <TextBlock DockPanel.Dock="Left">Tag1</TextBlock>
-            <TextBlock DockPanel.Dock="Left">Tag2</TextBlock>
-            <TextBlock DockPanel.Dock="Left">Tag3</TextBlock>
-            <TextBlock DockPanel.Dock="Left">Tag4</TextBlock>
-            <TextBlock DockPanel.Dock="Right" TextAlignment="Right">Rate this article</TextBlock>
-            </DockPanel>
-
-
+      <DockPanel Grid.Row="1"
+                  Grid.ColumnSpan="2"
+                  Background="#FFFFFFFF">
+          <TextBlock DockPanel.Dock="Left">Tags:</TextBlock>
+          <TextBlock DockPanel.Dock="Left">Tag1</TextBlock>
+          <TextBlock DockPanel.Dock="Left">Tag2</TextBlock>
+          <TextBlock DockPanel.Dock="Left">Tag3</TextBlock>
+          <TextBlock DockPanel.Dock="Left">Tag4</TextBlock>
+          <TextBlock DockPanel.Dock="Right" TextAlignment="Right">Rate this article</TextBlock>
+          <TextBlock DockPanel.Dock="Right" TextAlignment="Right">4/5</TextBlock>
+          </DockPanel>
     </StackPanel>
 
 
@@ -88,11 +89,7 @@
           <StackPanel Orientation="Vertical"
                       Background="RoyalBlue">
             <TextBlock TextWrapping="Wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis massa sed rhoncus maximus. Nunc efficitur justo et arcu finibus pellentesque. Nulla eu maximus nunc, quis consectetur enim. Nunc at pretium ligula, sit amet commodo est. Donec imperdiet hendrerit enim vitae egestas. Duis porttitor sem id urna feugiat ornare. Nullam quis mi ultrices, vestibulum odio sed, convallis magna. Aenean ornare est ligula, in pulvinar turpis aliquet vitae. Phasellus ornare, urna non gravida ornare, magna ante interdum sem, at fringilla eros elit vitae turpis. Aliquam bibendum consequat dui, non convallis turpis vulputate quis. Fusce vulputate semper arcu ut blandit. Sed id turpis id nibh porta tincidunt. Ut mi erat, fringilla rhoncus dictum quis, pellentesque nec libero. Fusce tincidunt est in dolor efficitur, sit amet sollicitudin nibh faucibus. Etiam id mi dolor. Nulla posuere, lorem nec imperdiet tincidunt, neque arcu ultricies orci, et egestas leo tortor et diam.</TextBlock>
-            <Image Source="resm:Avalonia.Skia.Assets.NoiseAsset_256X256_PNG.png?assembly=Avalonia.Skia"
-                   Height="100"
-                   Width="100"
-                   Stretch="Uniform"
-                   HorizontalAlignment="Center"></Image>
+            
             <TextBlock TextAlignment="Right"
                        Margin="0,0,15,10">More...</TextBlock>
           </StackPanel>
